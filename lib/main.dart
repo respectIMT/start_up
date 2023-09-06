@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:start_up/main/main_screen.dart';
+import 'package:start_up/main_screen.dart';
 
 void main() {
   runApp(const MyApp());

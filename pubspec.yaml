@@ -23,6 +23,7 @@ dependencies:
   logger: ^2.0.1
   fluttertoast: ^8.2.2
   video_player: ^2.7.0
+  flutter_gif: ^0.0.4
   
 
 dev_dependencies:
@@ -42,6 +43,10 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/images/coding/
+    - assets/images/os/
+    - assets/images/app/
+    - assets/images/others/
 
 
   # fonts:
