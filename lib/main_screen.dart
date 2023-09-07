@@ -1,9 +1,8 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:start_up/pages/drawer_about_page.dart';
 import 'package:start_up/main/item_search.dart';
-import 'package:start_up/main/programming_list.dart';
 import 'package:start_up/pages/drawer_logup.dart';
 import 'package:start_up/tabbar/applications/app_screen.dart';
 import 'package:start_up/tabbar/others/others_screen.dart';
@@ -33,7 +32,6 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     tabconroller = TabController(length: 4, vsync: this);
     pagecontroller.addListener(() {});
@@ -53,7 +51,7 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                margin: EdgeInsets.symmetric(vertical: 10),
+                margin: EdgeInsets.symmetric(vertical: 10.h),
                 child: Column(
                   children: [
                     InkWell(
@@ -216,33 +214,34 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
         ),
       ),
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              ItemSearch(
-                ontap: () {
-                  _scaffoldKey.currentState?.openDrawer();
-                },
+        child: Column(
+          children: [
+            ItemSearch(
+              ontap: () {
+                _scaffoldKey.currentState?.openDrawer();
+              },
+            ),
+            TabbarItem(
+              ontap: (int index) => nextScreen(index),
+              controller: tabconroller,
+            ),
+            Container(
+              height: 550.h,
+              child: PageView(
+                controller: pagecontroller,
+                children: [
+                  ProgrammingScreen(),
+                  SystemScreen(),
+                  AppScreen(),
+                  OthersScreen()
+                ],
+                onPageChanged: (index) => nextScreen(index),
               ),
-              TabbarItem(
-                ontap: (int index) => nextScreen(index),
-                controller: tabconroller,
-              ),
-              Container(
-                height: 600,
-                child: PageView(
-                  controller: pagecontroller,
-                  children: [
-                    ProgrammingScreen(),
-                    SystemScreen(),
-                    AppScreen(),
-                    OthersScreen()
-                  ],
-                  onPageChanged: (index) => nextScreen(index),
-                ),
-              ),
-            ],
-          ),
+            ),
+            Expanded(
+              child: Center(child: Text("www.imt.uz")),
+            )
+          ],
         ),
       ),
     );

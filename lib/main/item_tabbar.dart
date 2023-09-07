@@ -27,27 +27,39 @@ class TabbarItem extends StatelessWidget {
           indicatorSize: TabBarIndicatorSize.label,
           indicator: BoxDecoration(
               borderRadius: BorderRadius.circular(100.r), // Creates border
-              color: Colors.amber),
+              color: Colors.green),
           tabs: [
-            Text(
-              " Programming languages ",
-              style: GoogleFonts.archivo(
-                  textStyle: TextStyle(fontSize: 16.sp, color: Colors.black)),
+            Container(
+              padding: EdgeInsets.symmetric(vertical: 3.h, horizontal: 7.w),
+              child: Text(
+                "Programming languages",
+                style: GoogleFonts.archivo(
+                    textStyle: TextStyle(fontSize: 14.sp, color: Colors.black)),
+              ),
             ),
-            Text(
-              " Operation systems ",
-              style: GoogleFonts.archivo(
-                  textStyle: TextStyle(fontSize: 16.sp, color: Colors.black)),
+            Container(
+              padding: EdgeInsets.all(5),
+              child: Text(
+                "Operation systems",
+                style: GoogleFonts.archivo(
+                    textStyle: TextStyle(fontSize: 14.sp, color: Colors.black)),
+              ),
             ),
-            Text(
-              " Applications ",
-              style: GoogleFonts.archivo(
-                  textStyle: TextStyle(fontSize: 16.sp, color: Colors.black)),
+            Container(
+              padding: EdgeInsets.all(5),
+              child: Text(
+                "Applications",
+                style: GoogleFonts.archivo(
+                    textStyle: TextStyle(fontSize: 14.sp, color: Colors.black)),
+              ),
             ),
-            Text(
-              " Others ",
-              style: GoogleFonts.archivo(
-                  textStyle: TextStyle(fontSize: 16.sp, color: Colors.black)),
+            Container(
+              padding: EdgeInsets.all(5),
+              child: Text(
+                "Others",
+                style: GoogleFonts.archivo(
+                    textStyle: TextStyle(fontSize: 14.sp, color: Colors.black)),
+              ),
             ),
           ],
           isScrollable: true,

@@ -16,10 +16,12 @@ class _WeAboutState extends State<WeAbout> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.green,
         centerTitle: true,
         title: Text(
           "Biz haqimizda",
-          style: GoogleFonts.notoSerif(textStyle: TextStyle(fontSize: 20.sp)),
+          style: GoogleFonts.notoSerif(
+              textStyle: TextStyle(fontSize: 20.sp, color: Colors.white)),
         ),
       ),
       body: SingleChildScrollView(
@@ -27,14 +29,14 @@ class _WeAboutState extends State<WeAbout> {
           children: [
             Container(
               padding: EdgeInsets.symmetric(
-                horizontal: 25.w,
-                vertical: 20.h,
+                horizontal: 20.w,
+                vertical: 25.h,
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Biz haqimizda",
+                    "Dasturlash nima?",
                     style:
                         GoogleFonts.alef(textStyle: TextStyle(fontSize: 20.sp)),
                   ),
@@ -42,9 +44,9 @@ class _WeAboutState extends State<WeAbout> {
                     height: 10.h,
                   ),
                   Text(
-                    "Hozirda onlayn-do'konlarga ega bo'lgan ko'plab jismoniy do'konlar uchun odatiy holga aylanib bormoqda, ular Internetda eksklyuziv takliflarga ega bo'lib, siz uni jismoniy muassasada ko'rishingiz mumkin emas, bu sizga katta afzallik deb aytish uchun ko'rsatma beradi. Internetda sotib olish. Bu faqat onlayn xaridlar iste'molchiga olib keladigan ko'plab afzalliklardan biridir. Shuni unutmaslik kerakki, Internet a ulkan bitimlar dunyosi, ularning aksariyati bozorda haqiqiy yangilikdir va tarmoq tufayli ularning barchasiga kirish mumkin. Ushbu yondashuvga binoan, shubhasiz, bundan buyon ushbu aniq ko'tarilgan marketing tizimining afzalliklarini sezadigan ko'plab foydalanuvchilar yoki mijozlar mavjud. Qaerda uni boshqarish va texnik xizmat ko'rsatishda ko'plab xarajatlarni tejashingiz mumkin va bu biz ishonganimizdan ko'ra ko'proq pul tejashga yo'l qo'ymasligi aniq. Bundan tashqari, biz asta-sekin tushuntirib beradigan boshqa hissalar. Mahsulotlarni olib kirish, shubhasiz, mamlakatda mavjud bo'lmagan va narxlarda mavjud bo'lgan eng kuchli ustunlik ekanligini unutmaymiz. Ushbu strategiya keltiradigan mantiqiy foyda bilan foydalanuvchilar yoki mijozlarning o'zlarida. Shu paytgacha ular mahsulot, xizmat yoki maqolalarni hozirgi kunga qaraganda ancha arzonroq olishlari mumkin.",
+                    "Dasturlash — kompyuterlar va boshqa mikroprotsessorli elektron mashinalar uchun dasturlar tuzish, sinash va oʻzgartirish jarayonidan iborat. Odatda dasturlash yuqori saviyali dasturlash tillari (PHP, Java, C++, Python) vositasida amalga oshiriladi. Bu dasturlash tillarining semantikasi odam tiliga yaqinligi tufayli dastur tuzish jarayoni ancha oson kechadi. Dasturlash 1. Elektron mashinalarda masalalarni yechish hamda ularda har xil aqliy mehnat turlarini bajarish nazariyasi va usullarini ishlab chiqish bilan shugʻullanadigan fan; algoritmlar nazariyasining amaliy boʻlimi; insonning mashina bilan aloqa qilish vositasi. Asosiy vazifalaridan biri elektron mashinalar uchun programma (dastur) tuzish usullari, ularni tekshirish va takomillashtirishdan iborat. Yechilishi lozim boʻlgan masala algoritmi Dasturlashda „mashina tili“ga oʻtkaziladi. Dasturlash — bevosita dasturlash va avtomatik dasturlashga boʻlinadi. Bevosita Dasturlashda programmaning umumiy sxemasini ishlab chiqishdan kodlash va mashinaga kiritishgacha boʻlgan barcha ishni programmachi bajaradi. Avtomatik dasturlashda esa programmachi faqat programma sxemasini tuzib, uni qisqartirilgan simvolik kurinishda yozadi, programma tuzish va uni kodlash kabi texnikaviy ishlarni esa mashinaning oʻzi maxsus dasturlash programmasi yordamida bajaradi. Dasturlash jarayoni, odatda, quyidagi bosqichlarga boʻlinadi: masalaning qoʻyilishi; masalaning algoritmik tavsifini tuzish; masalani yuqori darajadagi programma tilida Dasturlash; masalani taxminiymashina tilida Dasturlash; masalani mashina tilida Dasturlash. Dasturlash tili programmalar tuzishning asosiy vositasidir. Bu tillar konkret mashina komandalari sistemasiga bogʻliq boʻlmasligi va iboralar strukturasi jihatidan umumiy xususiyatga ega boʻlishi bilan boshqa tabiiy tillarga oʻxshab ketadi. Iboralar ikki turga — operatorlar hamda tavsiflarga boʻlinadi, ularning bir-biri bilan bogʻliqligi qavslar bilan, alohidaligi nuqtali vergul bilan ajratiladi. Operator tilning amal birligi boʻlib, oʻz navbatida, oʻzgaruvchan kattalikka qiymat beruvchi operatorlar, shartga muvofiq tegishli hisoblash tarmogʻini tanlovchi (shartli) operator va takroriy hisobni amalga oshiruvchi sikl operatorlariga boʻlinadi. Tavsifda oʻzgaruvchan kattalik va boshqa belgilar xususiyatlari yoziladi. Biror xususiy masalani yechish uchun tuzilgan programmani simvolik ravishda funksional belgilash mumkin. Bunday belgilash va tavsif birgalikda kichik programma deb yuritiladi. Yangi programmalar tuzishda kichik programmalardan tayyor holda foydalanish mumkin. Juda koʻp dasturlash tillari (algol-60, q. Algol), muhandislik va ilmiy masalalarni yechish uchun fortran, iqtisodiy hisoblashlar uchun kobol, matematik modellar uchun si mula, tako-millashgan algol-68, PL/I yaratildi. Ularning har biri uchun shu tillarda ifodalangan masalalarga qarab mashina programmasini avtomatik tarzda qaytatuzuvchi translyatorlar mavjud. Taxminiy mashina tili ikkilik sistemadan koʻra yanada qulayroq simvollarda ifodalangan mashina komandalari terminlaridagi programmalar boʻlib, bunda koʻpincha, yuqori darajadagi til sifatida blok sxemalardan foydalaniladi. Dasturlashning programma tuzilgandan keyingi yana bir asosiy bosqichi „tekshirish“ (otladka) boʻlib, bunda yoʻl qoʻyilgan xatolar topiladi va tuzatiladi. Programmalar kodlanadi va mashinaga maxsus qurilma yordamida kiritiladi. Amaliyotda Dasturlashning yangi va tezkor usullari bor (2004); 2) matematik dasturlash — amaliy matematikaning bir boʻlimi; umumiy maʼnoda — biron-bir funksiya fo (x) ning ekstremumini (qarang Ekstremum) topish masalasi tushuniladi.[1]",
                     style: GoogleFonts.cabin(
-                        textStyle: TextStyle(fontSize: 15.sp)),
+                        textStyle: TextStyle(fontSize: 16.sp)),
                   ),
                 ],
               ),

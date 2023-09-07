@@ -6,9 +6,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:photo_view/photo_view.dart';
 
 class ImagePage extends StatefulWidget {
-  const ImagePage(this.image, this.name, {super.key});
+  const ImagePage({
+    super.key,
+    required this.image,
+    required this.name,
+  });
   final String image;
   final String name;
+
   @override
   State<ImagePage> createState() => _ImagePageState();
 }
@@ -17,6 +22,7 @@ class _ImagePageState extends State<ImagePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
         title: Text(
@@ -30,6 +36,7 @@ class _ImagePageState extends State<ImagePage> {
           height: double.maxFinite,
           width: double.maxFinite,
           child: PhotoView(
+            backgroundDecoration: BoxDecoration(color: Colors.white),
             imageProvider: AssetImage(
               widget.image,
             ),
