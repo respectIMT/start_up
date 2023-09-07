@@ -13,14 +13,12 @@ class ItemContainer extends StatelessWidget {
     required this.name,
     required this.info,
     required this.description,
-    // required this.icon,
   });
 
   final String image;
   final String name;
   final String info;
   final String description;
-  // final String icon;
 
   @override
   Widget build(BuildContext context) {
@@ -83,19 +81,9 @@ class ItemContainer extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Image.asset(
-                      // icon,
-                      'assets/icons/link.png',
-                      height: 18.h,
-                    ),
-                    SizedBox(
-                      width: 12.w,
-                    ),
-                    Image.asset(
-                      // icon,
-                      'assets/icons/information.png',
-                      height: 20.h,
-                    ),
+                    Image.asset('assets/icons/link.png', height: 18.h),
+                    SizedBox(width: 12.w),
+                    Image.asset('assets/icons/information.png', height: 20.h),
                   ],
                 )
               ],
