@@ -44,36 +44,34 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
         width: 260.w,
         child: DrawerItem(),
       ),
-      body: SafeArea(
-        child: Column(
-          children: [
-            ItemSearch(
-              ontap: () {
-                _scaffoldKey.currentState?.openDrawer();
-              },
+      body: Column(
+        children: [
+          ItemSearch(
+            ontap: () {
+              _scaffoldKey.currentState?.openDrawer();
+            },
+          ),
+          TabbarItem(
+            ontap: (int index) => nextScreen(index),
+            controller: tabconroller,
+          ),
+          Container(
+            height: 550.h,
+            child: PageView(
+              controller: pagecontroller,
+              children: [
+                ProgrammingScreen(),
+                SystemScreen(),
+                AppScreen(),
+                OthersScreen()
+              ],
+              onPageChanged: (index) => nextScreen(index),
             ),
-            TabbarItem(
-              ontap: (int index) => nextScreen(index),
-              controller: tabconroller,
-            ),
-            Container(
-              height: 550.h,
-              child: PageView(
-                controller: pagecontroller,
-                children: [
-                  ProgrammingScreen(),
-                  SystemScreen(),
-                  AppScreen(),
-                  OthersScreen()
-                ],
-                onPageChanged: (index) => nextScreen(index),
-              ),
-            ),
-            Expanded(
-              child: Center(child: Text("www.imt.uz")),
-            )
-          ],
-        ),
+          ),
+          Expanded(
+            child: Center(child: Text("www.imt.uz")),
+          )
+        ],
       ),
     );
   }
