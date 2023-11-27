@@ -1,13 +1,13 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:start_up/main/item_search.dart';
-import 'package:start_up/tabbar/applications/app_screen.dart';
-import 'package:start_up/tabbar/others/others_screen.dart';
-import 'package:start_up/tabbar/programming/program_screen.dart';
-import 'package:start_up/tabbar/systems/system_screen.dart';
 import 'drawer/drawer.dart';
 import 'main/item_tabbar.dart';
+import 'package:flutter/material.dart';
+import 'package:start_up/main/item_search.dart';
+import 'package:start_up/tabbar/others/others_screen.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:start_up/tabbar/systems/system_screen.dart';
+import 'package:start_up/tabbar/applications/app_screen.dart';
+import 'package:start_up/tabbar/programming/program_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
