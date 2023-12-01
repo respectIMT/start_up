@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace
+// ignore_for_file: avoid_unnecessary_containers
 import 'drawer/drawer.dart';
 import 'main/item_tabbar.dart';
 import 'package:flutter/material.dart';
@@ -42,36 +42,38 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
       backgroundColor: Colors.white,
       drawer: Drawer(
         width: 260.w,
-        child: DrawerItem(),
+        child: const DrawerItem(),
       ),
-      body: Column(
-        children: [
-          ItemSearch(
-            ontap: () {
-              _scaffoldKey.currentState?.openDrawer();
-            },
-          ),
-          TabbarItem(
-            ontap: (int index) => nextScreen(index),
-            controller: tabconroller,
-          ),
-          Container(
-            height: 550.h,
-            child: PageView(
-              controller: pagecontroller,
-              children: [
-                ProgrammingScreen(),
-                SystemScreen(),
-                AppScreen(),
-                OthersScreen()
-              ],
-              onPageChanged: (index) => nextScreen(index),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            ItemSearch(
+              ontap: () {
+                _scaffoldKey.currentState?.openDrawer();
+              },
             ),
-          ),
-          Expanded(
-            child: Center(child: Text("www.imt.uz")),
-          )
-        ],
+            TabbarItem(
+              ontap: (int index) => nextScreen(index),
+              controller: tabconroller,
+            ),
+            SizedBox(
+              height: 550.h,
+              child: PageView(
+                controller: pagecontroller,
+                children: const [
+                  ProgrammingScreen(),
+                  SystemScreen(),
+                  AppScreen(),
+                  OthersScreen()
+                ],
+                onPageChanged: (index) => nextScreen(index),
+              ),
+            ),
+            Container(
+              child: const Center(child: Text("www.imt.uz")),
+            )
+          ],
+        ),
       ),
     );
   }
