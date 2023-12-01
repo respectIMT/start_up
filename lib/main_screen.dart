@@ -70,7 +70,9 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
               ),
             ),
             Container(
-              child: const Center(child: Text("www.imt.uz")),
+              child: const Center(
+                child: Text("www.imt.uz"),
+              ),
             )
           ],
         ),
