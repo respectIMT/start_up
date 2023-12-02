@@ -61,7 +61,10 @@ class SignUp extends StatelessWidget {
                   child: TextField(
                     decoration: InputDecoration(
                         hintText: "Phone number", border: InputBorder.none),
-                    style: TextStyle(fontSize: 15.sp, color: Colors.black),
+                    style: TextStyle(
+                      fontSize: 15.sp,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
