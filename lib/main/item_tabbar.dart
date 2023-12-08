@@ -1,8 +1,6 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TabbarItem extends StatelessWidget {
   const TabbarItem({
@@ -22,7 +20,7 @@ class TabbarItem extends StatelessWidget {
         ),
         child: TabBar(
           controller: controller,
-          labelPadding: EdgeInsets.symmetric(horizontal: 15),
+          labelPadding: const EdgeInsets.symmetric(horizontal: 15),
           indicatorWeight: 3,
           indicatorSize: TabBarIndicatorSize.label,
           indicator: BoxDecoration(
@@ -38,7 +36,7 @@ class TabbarItem extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.all(5),
+              padding: const EdgeInsets.all(5),
               child: Text(
                 "Operation systems",
                 style: GoogleFonts.archivo(
@@ -46,7 +44,7 @@ class TabbarItem extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.all(5),
+              padding: const EdgeInsets.all(5),
               child: Text(
                 "Applications",
                 style: GoogleFonts.archivo(
@@ -54,7 +52,7 @@ class TabbarItem extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.all(5),
+              padding: const EdgeInsets.all(5),
               child: Text(
                 "Others",
                 style: GoogleFonts.archivo(

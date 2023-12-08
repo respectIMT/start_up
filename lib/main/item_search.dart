@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -40,7 +38,7 @@ class ItemSearch extends StatelessWidget {
                   margin: EdgeInsets.symmetric(horizontal: 10.w),
                   height: 15.h,
                   width: 15.w,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       shape: BoxShape.rectangle,
                       image: DecorationImage(
                         image: AssetImage(

@@ -1,8 +1,6 @@
-// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
-
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Programminglanguages extends StatefulWidget {
   const Programminglanguages({super.key});
@@ -29,7 +27,7 @@ class _ProgrammingLanguages extends State<Programminglanguages> {
               color: Colors.white,
               child: Column(
                 children: [
-                  Container(
+                  SizedBox(
                     width: double.maxFinite,
                     height: 500.h,
                   ),

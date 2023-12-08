@@ -1,8 +1,5 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
-
 import 'package:flutter/material.dart';
-
-import '../../main/item_container.dart';
+import 'package:start_up/main/item_container.dart';
 
 class ApplicationItems extends StatelessWidget {
   const ApplicationItems({
@@ -11,7 +8,7 @@ class ApplicationItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
         ItemContainer(
           image: "assets/images/app/telegram.png",

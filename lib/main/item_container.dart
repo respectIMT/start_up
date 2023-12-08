@@ -1,10 +1,8 @@
-// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:start_up/pages/all_info_page.dart';
 import 'package:start_up/pages/image_page.dart';
+import 'package:start_up/pages/all_info_page.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ItemContainer extends StatelessWidget {
   const ItemContainer({
@@ -23,12 +21,12 @@ class ItemContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
       child: Row(
         children: [
           InkWell(
             child: Container(
-              padding: EdgeInsets.all(5),
+              padding: const EdgeInsets.all(5),
               height: 45.h,
               width: 45.w,
               child: Image.asset(
@@ -49,7 +47,7 @@ class ItemContainer extends StatelessWidget {
             width: 5.w,
           ),
           Container(
-            padding: EdgeInsets.all(5),
+            padding: const EdgeInsets.all(5),
             width: 280.w,
             height: 40.h,
             child: Row(

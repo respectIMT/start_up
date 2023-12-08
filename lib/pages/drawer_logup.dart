@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:start_up/main/sign_up.dart';
 
@@ -19,7 +17,7 @@ class _LogUpPageState extends State<LogUpPage> {
           children: [
             Container(
               color: Colors.white,
-              child: SignUp(),
+              child: const SignUp(),
             ),
           ],
         ),

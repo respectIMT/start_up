@@ -1,9 +1,7 @@
-// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
-
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:start_up/pages/drawer_logup.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SignIn extends StatelessWidget {
   const SignIn({
@@ -15,14 +13,14 @@ class SignIn extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
+        SizedBox(
           width: double.maxFinite,
           height: 500.h,
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.only(top: 50),
-                padding: EdgeInsets.all(8),
+                margin: const EdgeInsets.only(top: 50),
+                padding: const EdgeInsets.all(8),
                 child: Text(
                   "Tizimga kirish",
                   style: GoogleFonts.aBeeZee(
@@ -42,14 +40,14 @@ class SignIn extends StatelessWidget {
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 8.w),
                   child: TextField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         hintText: "Username", border: InputBorder.none),
                     style: TextStyle(fontSize: 15.sp, color: Colors.black),
                   ),
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 height: 40.h,
                 width: 300.w,
                 decoration: BoxDecoration(
@@ -59,14 +57,14 @@ class SignIn extends StatelessWidget {
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 8.w),
                   child: TextField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         hintText: "Password", border: InputBorder.none),
                     style: TextStyle(fontSize: 15.sp, color: Colors.black),
                   ),
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 height: 40.h,
                 width: 300.w,
                 decoration: BoxDecoration(
@@ -83,7 +81,7 @@ class SignIn extends StatelessWidget {
                     ))),
               ),
               Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Column(
                   children: [
                     Container(
@@ -117,7 +115,7 @@ class SignIn extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
+              SizedBox(
                 width: 360.w,
                 child: InkWell(
                   child: Row(

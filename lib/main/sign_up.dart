@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -15,14 +13,14 @@ class SignUp extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
+        SizedBox(
           width: double.maxFinite,
           height: 500.h,
           child: Column(
             children: [
               Container(
-                padding: EdgeInsets.all(8),
-                margin: EdgeInsets.only(top: 50),
+                padding: const EdgeInsets.all(8),
+                margin: const EdgeInsets.only(top: 50),
                 child: Text(
                   "Ro'yxatdan o'tish",
                   style: GoogleFonts.aBeeZee(
@@ -32,7 +30,7 @@ class SignUp extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 height: 40.h,
                 width: 300.w,
                 decoration: BoxDecoration(
@@ -42,14 +40,14 @@ class SignUp extends StatelessWidget {
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 8.w),
                   child: TextField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         hintText: "Username", border: InputBorder.none),
                     style: TextStyle(fontSize: 15.sp, color: Colors.black),
                   ),
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 height: 40.h,
                 width: 300.w,
                 decoration: BoxDecoration(
@@ -59,7 +57,7 @@ class SignUp extends StatelessWidget {
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 8.w),
                   child: TextField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         hintText: "Phone number", border: InputBorder.none),
                     style: TextStyle(
                       fontSize: 15.sp,
@@ -69,7 +67,7 @@ class SignUp extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 height: 40.h,
                 width: 300.w,
                 decoration: BoxDecoration(
@@ -79,14 +77,14 @@ class SignUp extends StatelessWidget {
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 8.w),
                   child: TextField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         hintText: "Password", border: InputBorder.none),
                     style: TextStyle(fontSize: 15.sp, color: Colors.black),
                   ),
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 height: 40.h,
                 width: 300.w,
                 decoration: BoxDecoration(
@@ -103,7 +101,7 @@ class SignUp extends StatelessWidget {
                     ))),
               ),
               Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Column(
                   children: [
                     Container(
@@ -137,7 +135,7 @@ class SignUp extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
+              SizedBox(
                 width: 360.w,
                 child: InkWell(
                   child: Row(

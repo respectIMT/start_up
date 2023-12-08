@@ -1,9 +1,7 @@
-// ignore_for_file: sized_box_for_whitespace, prefer_const_constructors
-
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:photo_view/photo_view.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ImagePage extends StatefulWidget {
   const ImagePage({
@@ -32,11 +30,11 @@ class _ImagePageState extends State<ImagePage> {
       ),
       body: Container(
           color: Colors.white,
-          padding: EdgeInsets.all(15),
+          padding: const EdgeInsets.all(15),
           height: double.maxFinite,
           width: double.maxFinite,
           child: PhotoView(
-            backgroundDecoration: BoxDecoration(color: Colors.white),
+            backgroundDecoration: const BoxDecoration(color: Colors.white),
             imageProvider: AssetImage(
               widget.image,
             ),
