@@ -30,7 +30,7 @@ class SignIn extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(8),
+                margin: const EdgeInsets.all(8),
                 height: 40.h,
                 width: 300.w,
                 decoration: BoxDecoration(
@@ -136,7 +136,8 @@ class SignIn extends StatelessWidget {
                   ),
                   onTap: () {
                     Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => LogUpPage()),
+                      MaterialPageRoute(
+                          builder: (context) => const LogUpPage()),
                     );
                   },
                 ),
