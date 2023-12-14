@@ -106,7 +106,7 @@ class SignIn extends StatelessWidget {
                           ),
                           Container(
                             color: Colors.black,
-                            height: 1,
+                            height: 1.h,
                             width: 120.w,
                           ),
                         ],
