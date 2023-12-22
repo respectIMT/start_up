@@ -26,7 +26,7 @@ class SignIn extends StatelessWidget {
                   style: GoogleFonts.aBeeZee(
                       fontSize: 18.sp,
                       color: Colors.black,
-                      fontWeight: FontWeight.w600),
+                      fontWeight: FontWeight.w600,),
                 ),
               ),
               Container(
